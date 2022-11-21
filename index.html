@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <a id="logo" href="https://open.spotify-com">
+          <img src="./assets/imgs/logo.svg" alt="spotify logo" height="40" />
+        </a>
+        <ul>
+          <li class="active">
+            <img src="./assets/imgs/nav/home-selected.svg" alt="home icon" />
+            Home
+          </li>
+          <li>
+            <img src="./assets/imgs/nav/search-icon.svg" alt="search icon" />
+            Search
+          </li>
+          <li>
+            <img
+              src="./assets/imgs/nav/library-unselected.svg"
+              alt="library icon"
+            />
+            Your Library
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="icon-box plus"></div>
+            Create Playlist
+          </li>
+          <li>
+            <div class="icon-box heart"></div>
+            Liked Songs
+          </li>
+        </ul>
+
+        <div class="policies">
+          <a href="#">Cookies</a>
+          <a href="#">Privacy</a>
+        </div>
+      </nav>
+      <main>
+        <header>
+          <div id="arrows">
+            <span class="active">
+              <img
+                src="./assets/imgs/nav/caret-left.svg"
+                alt="caret left icon"
+              />
+            </span>
+            <span>
+              <img
+                src="./assets/imgs/nav/caret-right.svg"
+                alt="caret right icon"
+              />
+            </span>
+          </div>
+          <ul>
+            <li>Premium</li>
+            <li>Support</li>
+            <li>Download</li>
+            <li class="divider"></li>
+            <li>Sign Up</li>
+            <li id="login"><button>Log in</button></li>
+          </ul>
+        </header>
+        <div class="main-content">
+          <section>
+            <div class="title-section">
+              <h2>David Bowie</h2>
+              <a href="#">SEE ALL</a>
+            </div>
+            <div class="grid"></div>
+          </section>
+          <section>
+            <div class="title-section">
+              <h2>Led Zeppelin</h2>
+              <a href="#">SEE ALL</a>
+            </div>
+            <div class="grid"></div>
+          </section>
+          <section>
+            <div class="title-section">
+              <h2>Pink Floyd</h2>
+              <a href="#">SEE ALL</a>
+            </div>
+            <div class="grid"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

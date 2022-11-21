@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  display: flex;
+  min-height: 100vh;
+}
+
+nav {
+  width: 240px;
+  background-color: purple;
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* will shrink otherwise when adding grid of cards */
+  writing-mode: vertical-lr;
+  text-align: center;
+  text-orientation: upright;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 64px;
+  font-weight: 500;
+}
+
+main {
+  flex-grow: 1;
+  background-color: palevioletred;
+}
+
+main .main-content {
+  padding-inline: 32px;
+  padding-block: 24px;
+  color: black;
+
+  /* this will make only the main-container scrollable 
+    not the whole page*/
+
+  height: calc(100vh - 64px);
+  overflow: auto;
+}
+
+main .main-content::-webkit-scrollbar {
+  background-color: transparent;
+  width: 20px;
+}
+
+main .main-content::-webkit-scrollbar-thumb {
+  border: 6px solid transparent;
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, 0.405);
+  border-radius: 50px;
+}
+
+.skeleton {
+  height: 40px;
+  background-color: #ebebeb;
+  margin-bottom: 16px;
+}
