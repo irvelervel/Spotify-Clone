@@ -2,7 +2,7 @@ window.onload = async function () {
   console.log('Pagina caricata correttamente!')
   try {
     let response = await fetch(
-      'https://tech-camp-be-production.up.railway.app/songs'
+      'https://tech-camp-be-main.herokuapp.com/songs'
     )
     console.log('RISPOSTA OTTENUTA DAL SERVER', response)
     let tracks = await response.json()
